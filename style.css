@@ -1,0 +1,226 @@
+
+:root{
+    --blue:#0000ff;
+    --aqua:#00ffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #313131;
+}
+li,a,button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+.logo{
+    cursor: pointer;
+}
+.nav-link{
+    list-style: none;
+
+}
+.nav-link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-link li a{
+    padding: 5px;
+    transition: all 0.5 ease 0s;
+}
+.nav-link li a:link{
+    color: purple;
+    text-decoration: underline;
+}
+.nav-link li a:visited{
+    color: yellow;
+    
+}
+.nav-link li a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+.nav-link li a:active{
+    color: yellow;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: aqua;
+    color: #313131;
+    cursor: pointer;
+    border: var(--aqua);
+    transition: ease 0.8s;
+}
+button:hover{
+    background-color: cornflowerblue;
+    
+}
+
+/* list-section */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container ul li{
+    list-style: none;
+}
+
+/* :nth-child() */
+.container ul ol:first-child{
+    color: var(--aqua);
+    font-weight: 700;
+}
+.container ul ol:nth-child(11){
+    color: yellow;
+}
+
+.container ul ol:nth-child(2n){
+    background-color: grey;
+}
+.container ul ol:nth-child(2n+1){
+    color: #313131;
+    background-color: red;
+}
+
+/* title */
+
+.title{
+    text-align: center;
+    margin: 10px auto;
+    color: #f5f5f5;
+}
+.title h1::after{
+    content: ">>";
+
+}
+.title h1::before{
+    content: "<<";
+
+}
+/* form */
+.form{ 
+    color:#f5f5f5;
+    margin: 0px auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form #btn{
+    margin: 15px;
+    text-align: center;
+}
+/* input::placeholder{
+    color: grey;
+} */
+.form input, :focus{
+    border-color: var(--blue);
+    /* color: yellow; */
+    /* background-color: red; */
+    
+}
+input:disabled{
+    color: grey;
+}
+
+
+/* tooltip */
+.tooltip button{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px 10ox;
+}
+.tooltip button:hover::after{
+    position: absolute;
+    content: "Are you sure?";
+    top: -2.5rem;
+    width: 50px;
+    left: 50%;
+    color: #414141;
+    background-color: aqua;
+    padding: 5px 0px;
+    border-radius: 8px;
+
+}
+
+                        /* checkbox-radio */
+
+
+
+label{
+    display: block;
+     margin-bottom: 10px;
+ }
+
+input[type=checkbox] {
+   appearance: none;
+   background-color: #fff;
+   width: 15px;
+   height: 15px;
+   border: 2px solid #ccc;
+   border-radius: 2px;
+   display: inline-grid;
+   place-content: center; 
+ }
+
+input[type=checkbox]::before {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   
+}
+
+input[type=checkbox]:checked{
+   background-color: grey;
+   border: 3px solid grey;
+}
+
+
+
+                 /* radio-button */
+
+input[type=radio] {
+   appearance: none;
+   background-color: #fff;
+   width: 15px;
+   height: 15px;
+   border: 2px solid #ccc;
+   border-radius: 50%;
+   display: inline-grid;
+   place-content: center; 
+ }
+
+input[type=radio]::after {
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   
+}
+
+input[type=radio]:checked{
+   border: 3px solid blue;
+}
+ 
+ 
+
+  
