@@ -117,8 +117,7 @@ button:hover{
     margin: 0px auto;
     width: 200px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 .form #btn{
@@ -137,7 +136,6 @@ button:hover{
 input:disabled{
     color: grey;
 }
-
 
 /* tooltip */
 .tooltip button{
@@ -162,8 +160,6 @@ input:disabled{
 }
 
                         /* checkbox-radio */
-
-
 
 label{
     display: block;
@@ -193,8 +189,6 @@ input[type=checkbox]:checked{
    background-color: grey;
    border: 3px solid grey;
 }
-
-
 
                  /* radio-button */
 
